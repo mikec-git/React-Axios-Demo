@@ -16,10 +16,9 @@ class NewPost extends Component {
             body: this.state.content,
             author: this.state.author
         }
-        axios.post('/posts', post)
-        .then(res => {
-            console.log(res);
-        });
+        axios.post('/postsss', post)
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
     }
 
     render () {
